@@ -20,7 +20,7 @@ targets=input("[*] Enter targets to Scan (split them by ,) : ")
 ports=int(input("[*] Enter how many ports you want to scan : "))
 
 if ',' in targets:
-	print(termcolor.colored(('\n'+" Scanning Multiple targets"),'green'))
+	print(termcolor.colored("\n Scanning Multiple targets",'green'))
 	for ip_addr in targets.split(','):
 		scan(ip_addr.strip(' '),ports)
 		print('\n'+ " End Scan for "+ ip_addr)
